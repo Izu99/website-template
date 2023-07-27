@@ -8,17 +8,19 @@ import React, { Component } from "react";
 
 import "./App.css";
 import Login from "./Components/Login";
-import Navbar from "./Components/Navbar"
 import Homepage from "./Components/Homepage";
 class App extends Component {
 	render() {
 		return (
+
 			<div>
 				<Router>
 					<Switch>
+						
 						<Route path='/Login' component={Login} />
-						<Route path='/navbar' component={Navbar} />
-						<Route path='/homepage' component={Homepage} />
+						<Route path='/Homepage' component={Homepage} />
+						
+
 						<Redirect from='*' to='/404' />
 					</Switch>
 				</Router>
@@ -26,4 +28,5 @@ class App extends Component {
 		);
 	}
 }
+
 export default App;
