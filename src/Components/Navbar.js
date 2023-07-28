@@ -54,7 +54,7 @@ export default class Navbar extends Component {
             </ul>
 
             {/* Signin Button */}
-            <button className="btn btn-primary ms-5">Sign In</button>
+            <button className="btn btn-primary ms-5"><a href="/login">Sign In</a></button>
           </div>
         </div>
       </nav>

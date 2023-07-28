@@ -16,9 +16,10 @@ class App extends Component {
 			<div>
 				<Router>
 					<Switch>
-						
+
+						<Route exact path='/Homepage' component={Homepage} />
 						<Route path='/Login' component={Login} />
-						<Route path='/Homepage' component={Homepage} />
+						
 						
 
 						<Redirect from='*' to='/404' />
