@@ -41,11 +41,6 @@ export default class Navbar extends Component {
 								</a>
 							</li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-primary border border-0" type="submit" style={{ backgroundColor: '#00B7FF', boxShadow: '0px 0px 4px #eeeeee' }}>Search</button>
-
-          </form>
         </div>
       </div>
     </nav>
