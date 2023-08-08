@@ -1,7 +1,19 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Slideshow from "./Slideshow";
 
 import "../Styles/Homepage.css";
+
+import mobile from "../images/mobile.png";
+import web from "../images/web.png";
+import desktop from "../images/desktop.png";
+import docker from "../images/docker.png";
+import ui from "../images/ui.png";
+import ecommerce from "../images/ecommerce.png";
+import cyber from "../images/cyber.png";
+import data from "../images/data.png";
+import network from "../images/network.png";
 
 export default class Homepage extends Component {
 	render() {
@@ -13,35 +25,27 @@ export default class Homepage extends Component {
 						<div class='row align-center mg-4'>
 							<div class='col-md-6'>
 								<h2 class='display-5 p-4 fw-light'>
-									Create awesome digital experiences <br />
-									quickly, easily, and securely
+									Create awesome digital experiences quickly, easily, and
+									securely
 								</h2>
-
 								<div class='col-md-12 d-flex justify-content-center fs-4 p-4'>
-									Foundational technology for your digital platform
+									Empowering Innovation Through Elegant Software Solutions
 								</div>
 								<h2 class='display-2 p-4 fs-5'>
-									Digital experiences delivered as apps, workflows, and
-									automations require powerful cloud native infrastructure to do
-									the heavy lifting. Our products help you focus on the business
-									requirements and leave the complexities to us. Build your
-									digital platform using our API Management, Integration and IAM
-									products that are available to run yourself, in a private
-									cloud or as a SaaS, or just subscribe to our Internal
-									Developer Platform as a Service and get coding today.
+									Unlocking Limitless Digital Experiences: From Dynamic Apps to Seamless Workflows, and Stunning Animations – All Enhanced by the Power of Cloud-Native Infrastructure. Embrace our Suite of Products to Liberate Your Focus on Business Needs, while we Tackle the Technical Complexities. Whether You Opt for API Mastery, Integration Prowess, or IAM Excellence, our Solutions Adapt: Run Privately, Soar in the Cloud, or Embrace SaaS. Alternatively, Dive into our Developer's Oasis – Your Personal Platform-as-a-Service, Accelerating Your Coding Odyssey Today
 								</h2>
 							</div>
 
 							<div class='col-md-6'>
 								<img
-									src='https://wso2.cachefly.net/wso2/sites/all/2023/images/hero-image-ashjuly-2023.webp'
+									src='https://rubyhaus.com/wp-content/uploads/2018/10/solutions-640x640.png'
 									alt=''
 									srcset=''
 									class='img-fluid'
-									style={{}}
+									style={{width: '75%'}}
 								/>
 							</div>
-							<div className='container'>
+							{/* <div className='container'>
 								<div className='buttons d-flex justify-content-between align-items-center'>
 									<button
 										class='btn btn-lg m-2 px-4 py-2 w-100'
@@ -64,123 +68,253 @@ export default class Homepage extends Component {
 										button
 									</button>
 								</div>
+							</div> */}
+						</div>
+					</div>
+				</div>
+				<div class='container-xxl bg-dark'>
+					<div className="row p-5">
+						<Slideshow />
+					</div>
+				</div>
+
+				<div className='container mt-5' id='services'>
+					<div className='row'>
+						<div class='card-group mt-4'>
+							<div
+								class='card me-2 ms-2'
+								style={{
+ 									border: "1px solid #eeeeee" 
+								}}>
+								<img
+									src={mobile}
+									class='card-img-top mx-auto mt-4 mb-2'
+									alt='...'
+									style={{ width: "60px" }}
+								/>
+								<div class='card-body'>
+									<h5 class='card-title text-center'>Mobile App Development</h5>
+									<p
+										class='card-text text-center mt-4 mb-5'
+										style={{ fontSize: "16px" }}>
+										Our expert team of mobile app developers crafts innovative
+										and user-friendly applications for iOS and Android
+										platforms. Whether you need a business app, a gaming
+										application, or a utility tool, we have the expertise to
+										deliver top-notch solutions tailored to your requirements.
+									</p>
+								</div>
+							</div>
+							<div
+								class='card me-2 ms-2'
+								style={{
+ 									border: "1px solid #eeeeee" 
+								}}>
+								<img
+									src={web}
+									class='card-img-top mx-auto mt-4 mb-2'
+									alt='...'
+									style={{ width: "60px" }}
+								/>
+								<div class='card-body'>
+									<h5 class='card-title text-center'>
+										Web Application Development
+									</h5>
+									<p
+										class='card-text text-center mt-4 mb-5'
+										style={{ fontSize: "16px" }}>
+										From simple websites to complex web applications, we design
+										and develop dynamic, interactive, and scalable solutions.
+										Our web development services encompass the latest
+										technologies and frameworks to create responsive and
+										engaging user experiences.
+									</p>
+								</div>
+							</div>
+							<div
+								class='card me-2 ms-2'
+								style={{
+ 									border: "1px solid #eeeeee" 
+								}}>
+								<img
+									src={desktop}
+									class='card-img-top mx-auto mt-4 mb-2'
+									alt='...'
+									style={{ width: "60px" }}
+								/>
+								<div class='card-body'>
+									<h5 class='card-title text-center'>
+										Desktop Application Development
+									</h5>
+									<p
+										class='card-text text-center mt-4 mb-5'
+										style={{ fontSize: "16px" }}>
+										Embrace the power of desktop applications customized to
+										enhance your business processes and productivity. Our
+										proficient developers build robust and efficient desktop
+										applications that run seamlessly across various operating
+										systems.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class='card-group mt-4'>
+							<div
+								class='card me-2 ms-2'
+								style={{
+ 									border: "1px solid #eeeeee" 
+								}}>
+								<img
+									src={docker}
+									class='card-img-top mx-auto mt-4 mb-2'
+									alt='...'
+									style={{ width: "60px" }}
+								/>
+								<div class='card-body'>
+									<h5 class='card-title text-center'>DevOps Solutions</h5>
+									<p
+										class='card-text text-center mt-4 mb-5'
+										style={{ fontSize: "16px" }}>
+										Stay ahead in the fast-paced digital landscape with our
+										DevOps services. We integrate development and operations,
+										streamlining your software delivery process, enhancing
+										collaboration, and ensuring continuous deployment for a
+										faster time-to-market.
+									</p>
+								</div>
+							</div>
+							<div
+								class='card me-2 ms-2'
+								style={{
+ 									border: "1px solid #eeeeee" 
+								}}>
+								<img
+									src={ui}
+									class='card-img-top mx-auto mt-4 mb-2'
+									alt='...'
+									style={{ width: "60px" }}
+								/>
+								<div class='card-body'>
+									<h5 class='card-title text-center'>UI/UX Design</h5>
+									<p
+										class='card-text text-center mt-4 mb-5'
+										style={{ fontSize: "16px" }}>
+										Enhancing user experiences through intuitive and visually
+										appealing designs. Our expert designers create interfaces
+										that delight and engage your users, ensuring seamless
+										navigation and interaction with your applications.
+									</p>
+								</div>
+							</div>
+							<div
+								class='card me-2 ms-2'
+								style={{
+ 									border: "1px solid #eeeeee" 
+								}}>
+								<img
+									src={ecommerce}
+									class='card-img-top mx-auto mt-4 mb-2'
+									alt='...'
+									style={{ width: "60px" }}
+								/>
+								<div class='card-body'>
+									<h5 class='card-title text-center'>
+										E-commerce Store Development
+									</h5>
+									<p
+										class='card-text text-center mt-4 mb-5'
+										style={{ fontSize: "16px" }}>
+										Unlock your business's online potential with our bespoke
+										e-commerce solutions. We design secure and user-friendly
+										online stores that provide a seamless shopping experience,
+										increasing your conversion rates and maximizing your
+										revenue.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class='card-group mt-4'>
+							<div
+								class='card me-2 ms-2'
+								style={{
+ 									border: "1px solid #eeeeee" 
+								}}>
+								<img
+									src={cyber}
+									class='card-img-top mx-auto mt-4 mb-2'
+									alt='...'
+									style={{ width: "60px" }}
+								/>
+								<div class='card-body'>
+									<h5 class='card-title text-center'>Cybersecurity</h5>
+									<p
+										class='card-text text-center mt-4 mb-5'
+										style={{ fontSize: "16px" }}>
+										Safeguarding your digital assets from evolving threats. Our
+										cybersecurity experts implement robust measures to protect
+										your applications and data, conducting thorough assessments,
+										implementing encryption, and ensuring compliance with
+										industry standards.
+									</p>
+								</div>
+							</div>
+							<div
+								class='card me-2 ms-2'
+								style={{
+ 									border: "1px solid #eeeeee" 
+								}}>
+								<img
+									src={data}
+									class='card-img-top mx-auto mt-4 mb-2'
+									alt='...'
+									style={{ width: "60px" }}
+								/>
+								<div class='card-body'>
+									<h5 class='card-title text-center'>Data Science</h5>
+									<p
+										class='card-text text-center mt-4 mb-5'
+										style={{ fontSize: "16px" }}>
+										Leveraging the power of data for informed decision-making.
+										Our data scientists analyze and interpret your data,
+										providing valuable insights, predictive modeling, and
+										data-driven solutions to drive business growth.
+									</p>
+								</div>
+							</div>
+							<div
+								class='card me-2 ms-2'
+								style={{
+ 									border: "1px solid #eeeeee" 
+								}}>
+								<img
+									src={network}
+									class='card-img-top mx-auto mt-4 mb-2'
+									alt='...'
+									style={{ width: "60px" }}
+								/>
+								<div class='card-body'>
+									<h5 class='card-title text-center'>Network Services</h5>
+									<p
+										class='card-text text-center mt-4 mb-5'
+										style={{ fontSize: "16px" }}>
+										Building and optimizing your digital infrastructure. Our
+										network experts design, implement, and manage secure and
+										efficient network solutions to ensure smooth communication
+										and data flow across your organization.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class='container-xxl'>
-					<div class='bg-dark bg-gradient p-5 mt-5'>
-						<h3 class='text-white align-justify'>
-							Our growing software company caters to a diverse range of
-							customers, including 700+ direct clients, 5000+ Original Equipment
-							Manufacturer (OEM) partners, and over 25,000 open-source customers
-							across 90+ countries.
-						</h3>
-						<div class='d-flex justify-content-center'>
-							<img
-								src='https://th.bing.com/th/id/R.efcd9bfe34ebb06b229c8e49b2d0dacc?rik=VXPDoJ4%2fAtByIw&riu=http%3a%2f%2fwww.crystalconsultants.in%2fwp-content%2fuploads%2f2012%2f03%2fclient-list2.jpg&ehk=rDUFJPTHpI9nMgNAW1FVnUOHgCgUTTT1wnpBudwjAys%3d&risl=&pid=ImgRaw&r=0'
-								srcset=''
-								class='img-fluid pt-5'
-							/>
-						</div>
-					</div>
-				</div>
-				<div className='container'>
-					<h2 class='text-center pt-5 pb-5 fs-1' style={{ color: "#0D6EFD" }}>
-						API Management
-					</h2>
-					<div className='hstack gap-5'>
-						<div className='col'>
-							100% open source enterprise-grade API management solution
-							deployable on any infrastructure. With full lifecycle API
-							management and an API gateway, manage services as APIs, discover
-							and consume through a developer portal, apply security & policies
-							on APIs, and monitor them for business insights.
-						</div>
-						<div class='hstack' style={{ height: "100px" }}>
-							<div class='vr'></div>
-						</div>
-						<div className='col'>
-							Fully SaaS enterprise-grade API-first development and management.
-							Create, deploy, run, and manage APIs, API proxies and services
-							with a fully fledged control plane that controls SaaS or
-							private-cloud API gateways.
-						</div>
-					</div>
-				</div>
-				<div className='container'>
-					<h2 class='text-center pt-5 pb-5 fs-1' style={{ color: "#0D6EFD" }}>
-						Integration
-					</h2>
-					<div className='hstack gap-3'>
-						<div>
-							100% open source enterprise-grade API management solution
-							deployable on any infrastructure. With full lifecycle API
-							management and an API gateway, manage services as APIs, discover
-							and consume through a developer portal, apply security & policies
-							on APIs, and monitor them for business insights.
-						</div>
-						<div class='hstack' style={{ height: "200px" }}>
-							<div class='vr'></div>
-						</div>
-						<div>
-							Fully SaaS enterprise-grade API-first development and management.
-							Create, deploy, run, and manage APIs, API proxies and services
-							with a fully fledged control plane that controls SaaS or
-							private-cloud API gateways.
-						</div>
-						<div class='hstack' style={{ height: "200px" }}>
-							<div class='vr'></div>
-						</div>
-						<div>
-							100% open source enterprise-grade API management solution
-							deployable on any infrastructure. With full lifecycle API
-							management and an API gateway, manage services as APIs, discover
-							and consume through a developer portal, apply security & policies
-							on APIs, and monitor them for business insights.
-						</div>
-					</div>
-				</div>
-				<div className='container'>
-					<h2 class='text-center pt-5 pb-5 fs-1' style={{ color: "#0D6EFD" }}>
-						Identity & Access Management
-					</h2>
-					<div className='hstack gap-3'>
-						<div>
-							100% open source enterprise-grade API management solution
-							deployable on any infrastructure. With full lifecycle API
-							management and an API gateway, manage services as APIs, discover
-							and consume through a developer portal, apply security & policies
-							on APIs, and monitor them for business insights.
-						</div>
-						<div class='hstack' style={{ height: "200px" }}>
-							<div class='vr'></div>
-						</div>
-						<div>
-							Fully SaaS enterprise-grade API-first development and management.
-							Create, deploy, run, and manage APIs, API proxies and services
-							with a fully fledged control plane that controls SaaS or
-							private-cloud API gateways.
-						</div>
-						<div class='hstack' style={{ height: "200px" }}>
-							<div class='vr'></div>
-						</div>
-						<div>
-							100% open source enterprise-grade API management solution
-							deployable on any infrastructure. With full lifecycle API
-							management and an API gateway, manage services as APIs, discover
-							and consume through a developer portal, apply security & policies
-							on APIs, and monitor them for business insights.
-						</div>
-					</div>
-				</div>
+
 				<div class='container'>
 					<div class='row row-cols-1 row-cols-md-3 g-4 pt-5'>
 						<div class='col'>
 							<div class='card h-100'>
 								<div class='card-body'>
-									<h5 class='card-title text-center pt-4 pb-4'>
-										Customer Review 1
+									<h5 class='card-title text-center text-center pt-4 pb-4'>
+										Customer Review
 									</h5>
 									<p class='card-text'>
 										"We were in dire need of a modern and engaging website for
@@ -196,8 +330,8 @@ export default class Homepage extends Component {
 						<div class='col'>
 							<div class='card h-100'>
 								<div class='card-body'>
-									<h5 class='card-title text-center pt-4 pb-4'>
-										Customer Review 2
+									<h5 class='card-title text-center text-center pt-4 pb-4'>
+										Customer Review
 									</h5>
 									<p class='card-text'>
 										"Your team developed an outstanding desktop app for employee
@@ -214,8 +348,8 @@ export default class Homepage extends Component {
 						<div class='col'>
 							<div class='card h-100'>
 								<div class='card-body'>
-									<h5 class='card-title text-center pt-4 pb-4'>
-										Customer Review 3
+									<h5 class='card-title text-center text-center pt-4 pb-4'>
+										Customer Review
 									</h5>
 									<p class='card-text'>
 										"We approached your company to build a mobile app for
@@ -232,126 +366,55 @@ export default class Homepage extends Component {
 						</div>
 					</div>
 				</div>
+				<div className='container' style={{width: '60%', marginTop: '4rem'}}>
+					<div className="row">
+					<form id='contactForm mx-auto' >
+						<div class='mb-3'>
+							<label class='form-label' for='name'>
+								Name
+							</label>
+							<input
+								class='form-control'
+								id='name'
+								type='text'
+								placeholder='Name'
+							/>
+						</div>
 
-				<footer class='text-center text-lg-start bg-light text-muted pt-5'>
-					<section class='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-						<div class='me-5 d-none d-lg-block'>
-							<span>Get connected with us on social networks:</span>
+						<div class='mb-3'>
+							<label class='form-label' for='emailAddress'>
+								Email Address
+							</label>
+							<input
+								class='form-control'
+								id='emailAddress'
+								type='email'
+								placeholder='Email Address'
+							/>
 						</div>
 
 						<div>
-							<a href='' class='me-4 text-reset'>
-								<i class='fab fa-facebook-f'></i>
-							</a>
-							<a href='' class='me-4 text-reset'>
-								<i class='fab fa-twitter'></i>
-							</a>
-							<a href='' class='me-4 text-reset'>
-								<i class='fab fa-google'></i>
-							</a>
-							<a href='' class='me-4 text-reset'>
-								<i class='fab fa-instagram'></i>
-							</a>
-							<a href='' class='me-4 text-reset'>
-								<i class='fab fa-linkedin'></i>
-							</a>
-							<a href='' class='me-4 text-reset'>
-								<i class='fab fa-github'></i>
-							</a>
+							<label class='form-label' for='message'>
+								Message
+							</label>
+							<textarea
+								class='form-control'
+								id='message'
+								type='text'
+								placeholder='Message'
+								style={{height: '10rem'}}
+							/>
 						</div>
-					</section>
 
-					<section class=''>
-						<div class='container text-center text-md-start mt-5'>
-							<div class='row mt-3'>
-								<div class='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
-									<h6 class='text-uppercase fw-bold mb-4'>
-										<i class='fas fa-gem me-3'></i>Company name
-									</h6>
-									<p>
-										Here you can use rows and columns to organize your footer
-										content. Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit.
-									</p>
-								</div>
-
-								<div class='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4'>
-									<h6 class='text-uppercase fw-bold mb-4'>Products</h6>
-									<p>
-										<a href='#!' class='text-reset'>
-											Angular
-										</a>
-									</p>
-									<p>
-										<a href='#!' class='text-reset'>
-											React
-										</a>
-									</p>
-									<p>
-										<a href='#!' class='text-reset'>
-											Vue
-										</a>
-									</p>
-									<p>
-										<a href='#!' class='text-reset'>
-											Laravel
-										</a>
-									</p>
-								</div>
-
-								<div class='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
-									<h6 class='text-uppercase fw-bold mb-4'>Useful links</h6>
-									<p>
-										<a href='#!' class='text-reset'>
-											Pricing
-										</a>
-									</p>
-									<p>
-										<a href='#!' class='text-reset'>
-											Settings
-										</a>
-									</p>
-									<p>
-										<a href='#!' class='text-reset'>
-											Orders
-										</a>
-									</p>
-									<p>
-										<a href='#!' class='text-reset'>
-											Help
-										</a>
-									</p>
-								</div>
-
-								<div class='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4'>
-									<h6 class='text-uppercase fw-bold mb-4'>Contact</h6>
-									<p>
-										<i class='fas fa-home me-3'></i> New York, NY 10012, US
-									</p>
-									<p>
-										<i class='fas fa-envelope me-3'></i>
-										info@example.com
-									</p>
-									<p>
-										<i class='fas fa-phone me-3'></i> + 01 234 567 88
-									</p>
-									<p>
-										<i class='fas fa-print me-3'></i> + 01 234 567 89
-									</p>
-								</div>
-							</div>
+						<div class='d-grid'>
+							<button class='btn btn-primary btn-lg mt-4' type='submit'>
+								Submit
+							</button>
 						</div>
-					</section>
-
-					<div
-						class='text-center p-4'
-						style={{backgroundColor: 'rgba(0, 0, 0, 0.05)'}}>
-						© 2021 Copyright:
-						<a class='text-reset fw-bold' href='https://mdbootstrap.com/'>
-							MDBootstrap.com
-						</a>
-					</div>
-				</footer>
+					</form>
+					</div>					
+				</div>
+				<Footer />
 			</div>
 		);
 	}

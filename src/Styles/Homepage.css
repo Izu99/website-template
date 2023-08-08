@@ -1,21 +1,9 @@
-:root {
-	--bs-gradient: linear-gradient(to bottom, #324b5b, #425d73);
+#services .card {
+    box-shadow: 0px 0px 10px 0px #dddddd;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
 }
-
-.container-fluid {
-	max-width: 1200px; /* Set your desired maximum width */
-}
-
-.card {
-	box-shadow: 0px 0px 10px 0px #c4c2c2;
-	transition: box-shadow 0.3s ease; /* Added transition property */
-	margin-top: 35px;
-}
-
-.card:hover {
-	box-shadow: 0px 0px 12px 0px #979595;
-}
-
-footer {
-	margin-top: 40px;
+#services .card:hover {
+    box-shadow: 0px 0px 10px 4px #dddddd;
+    transform: scale(1.01);
 }
